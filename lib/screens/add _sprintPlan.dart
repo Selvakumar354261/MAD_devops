@@ -173,7 +173,7 @@ class _AddSprintPlanState extends State<AddSprintPlanScreen> {
             appBar: AppBar(
               automaticallyImplyLeading: false,
               backgroundColor:
-                  isDarkMode ? const Color(0xFF1E1E1E) : Colors.whiPte,
+                  isDarkMode ? const Color(0xFF1E1E1E) : Colors.white,
               title: Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: Text(

@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:devops/screens/home/dashboard.dart';
+import 'package:devops/screens/home/home.dart';
 import 'package:devops/services/services.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -36,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
         await prefs.setString('password', password);
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) =>  SprintDashboardPage(sprint: [],)),
+          MaterialPageRoute(builder: (context) =>  FeedbackApp()),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
